@@ -143,9 +143,11 @@ header li a, .menu-button, footer li a{
 header li a:hover, .menu-button:hover, footer li a:hover{
   background-color: var(--blue-bulletin);
   border: solid 2px var(--news-flash);
+  cursor:pointer;
 
 }
 .menu-button{
+  
   justify-content: center;
   display: flex;
   margin: 0 auto;
@@ -476,6 +478,7 @@ header li{
 }
 
 
+
 }
 
 
@@ -552,9 +555,22 @@ header li{
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
-  .mobile-nav:has(#menu-toggle:checked) header button {
-    visibility: visible;
+  .mobile-nav:has(#menu-toggle:checked) ul {
+    display:flex;
+    flex-direction: column;
+    gap:10px;
 
   }
+
+  .mobile-nav:has(#menu-toggle:checked) li a {
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+
+
 
 }
