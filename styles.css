@@ -497,6 +497,37 @@ form button{
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
 
+@media (prefers-color-scheme: light){
+  body{
+  background-color: var(--watchdog-white);
+  color: var(--truth-text);
+  }
+}
+
+@media (prefers-color-scheme: dark){
+  body{
+  background-color: var(--truth-text);
+  color: var(--watchdog-white);
+  }
+}
+
+@media (prefers-reduced-motion:reduce){
+
+  #breaking-news div:hover{
+  transform: scale(1);
+  }
+
+  #featured-articles div:hover{
+  transform: scale(1);
+
+}
+
+
+}
+
+
+
+
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
