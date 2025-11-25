@@ -24,6 +24,7 @@
 <!-- ADD skip to main content -->
    <a class="skipContent" href="#main"> Skip to content </a>
 <header>
+  <div id="headercontent">
     <button id="theme-toggle" aria-label="Toggle light/dark mode">
       <svg width="35px" height="35px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
@@ -44,24 +45,30 @@
           <li><a href="#social">Social</a></li>
         </ul>
       </nav>
+      </div>
   </header>
 
   <main id="main">
+      <div id="maincontent">
+                <section id="welcome">
+
       <h2>Welcome to Civic Lens</h2>
         <p>We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
-        <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
+        <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote></section>
 
         <section id="breaking-news">
       <h2>Breaking News</h2>
-
+          <div>
         <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
         <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
         <video src="videos/water-management.mp4" controls></video>
+        </div>
 
-        
+        <div>        
         <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
         <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
         <video src ="videos/voter-suppression.mp4" controls></video>
+        </div>
 
         </section>
         
@@ -119,26 +126,26 @@
           <fieldset>
           	<legend>Notification Preferences</legend>
 
-                <input id="breaking-news" type="checkbox" name="preferences">
-                <label for="breaking-news">Breaking News</label>
+                <input id="breaking-newsCB" type="checkbox" name="breaking-newsCB">
+                <label for="breaking-newsCB">Breaking News</label>
 
-                <input id="politics" type="checkbox" name="preferences" >
-                <label for="politics">Politics</label>
+                <input id="politicsCB" type="checkbox" name="politicsCB" >
+                <label for="politicsCB">Politics</label>
 
-                <input id="weather" type="checkbox" name="preferences">
-                <label for="weather">Weather</label>
+                <input id="weatherCB" type="checkbox" name="weatherCB">
+                <label for="weatherCB">Weather</label>
 
-                <input id="sports" type="checkbox" name="preferences">
-                <label for="sports">Sports</label>
+                <input id="sportsCB" type="checkbox" name="sportsCB">
+                <label for="sportsCB">Sports</label>
 
-                <input id="entertainment" type="checkbox" name="preferences">
-                <label for="entertainment">Entertainment</label>
+                <input id="entertainmentCB" type="checkbox" name="entertainmentCB">
+                <label for="entertainmentCB">Entertainment</label>
 
-                <input id="world" type="checkbox" name="preferences">
-                <label for="world">World</label>
+                <input id="worldCB" type="checkbox" name="worldCB">
+                <label for="worldCB">World</label>
 
-                <input id="financial" type="checkbox" name="preferences">
-                <label for="financial">Financial</label>
+                <input id="financialCB" type="checkbox" name="financialCB">
+                <label for="financialCB">Financial</label>
 
               </fieldset>
 
@@ -147,10 +154,11 @@
         
         </form>
       </section>
-   
+      </div>
 
          </main>
         <footer>
+          <div id="footer-content">
 
             <section id="social">
         <h2>Follow Us</h2>
@@ -165,6 +173,7 @@
         
         </section>
         <small>&copy; 2025 Civic Lens. All rights reserved.</small>
+        </div>
       </footer>
         
   <script>
