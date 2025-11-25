@@ -290,10 +290,10 @@ form{
 }
 
 form div{
-    width: 100%
+    width: 100%;
 }
 form div input{
-  width: 100%
+  width: 100%;
 }
 fieldset{
   border: 2px solid var(--blue-bulletin);
@@ -554,23 +554,18 @@ header li{
 
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
-@supports (selector(:has(*))) {
-  .mobile-nav:has(#menu-toggle:checked) ul {
+@supports (selector(:has(*))){
+  .mobile-nav:has(#menu-toggle:checked) ul{
     display:flex;
     flex-direction: column;
     gap:10px;
 
   }
 
-  .mobile-nav:has(#menu-toggle:checked) li a {
+  .mobile-nav:has(#menu-toggle:checked) li a{
   justify-content: center;
   display: flex;
   margin: 0 auto;
   width: 100%;
-
-}
-
-
-
-
+  }
 }
